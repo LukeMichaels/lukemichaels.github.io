@@ -1,36 +1,35 @@
 <!-- :::::::::: Header :::::::::: -->
-<?php include 'includes/header.php'; ?>
+<?php include 'header.php'; ?>
 
-	<div id="full">
-		<h1>Print Gallery</h1>
-		<!--
-<p>
-		</p>
--->
-	</div>
+	<section class="page-header section group">
+  	
+  	<div class="col span_2_of_2">
+  		<h1>Print Gallery</h1>
+  	</div>
+  	
+	</section><!-- .page-header -->
 	
-	<div class="gallery">
-		
-		<!-- <h2>Fliers</h2><br /> -->
+	<!-- :::::::::: Print Gallery :::::::::: -->
+  <section class="page-content gallery section group">
 		
 		<div class="col span_1_of_2">
 			
 			<article class="piece-wrapper">
-	  			<a href='images/retina/radiohead.jpg' class='fresco' data-fresco-group='gallery'>
-					<img src="images/retina/radiohead.jpg" title="Radiohead Flier" alt="Radiohead Flier"/>
-	  			</a><br /><br />
-				<h3>Radiohead Flier</h1>
-			  	<h4>11x17&quot; Flier design</h3>
-			  	<h5>Created in Adobe Illustrator &amp; Photoshop</h4>
-			 </article>
+  			<a href='images/retina/radiohead.jpg' class='fresco' data-fresco-group='gallery'>
+				  <img src="images/retina/radiohead.jpg" title="Radiohead Flier" alt="Radiohead Flier"/>
+  			</a><br /><br />
+        <h3>Radiohead Flier</h1>
+		  	<h4>11x17&quot; Flier design</h3>
+		  	<h5>Created in Adobe Illustrator &amp; Photoshop</h4>
+		  </article>
 
-			 <article class="piece-wrapper">
+      <article class="piece-wrapper">
 				<a href='images/retina/explosions-in-the-sky.jpg' class='fresco' data-fresco-group='gallery'>		  			
 					<img src="images/retina/explosions-in-the-sky.jpg" title="Explosions in the Sky Flier" alt="Explosions in the Sky Flier">
 				</a><br /><br />
 				<h3>Explosions In The Sky at The Granada</h1>
-			  	<h4>16x24&quot; Flier design</h3>
-			  	<h5>Created in Adobe Illustrator &amp; Photoshop</h4>
+        <h4>16x24&quot; Flier design</h3>
+        <h5>Created in Adobe Illustrator &amp; Photoshop</h4>
 			</article>
 	  	
 			<article class="piece-wrapper">
@@ -38,8 +37,8 @@
 					<img src="images/retina/fairbanks-mr-history.jpg" title="Mr History Fairbanks Flier" alt="Mr History Fairbanks Flier">
 				</a><br /><br />
 				<h3>Fairbanks With Mr. History at Record Bar</h1>
-			  	<h4>11x17&quot; Flier design</h3>
-			  	<h5>Created in Adobe Illustrator</h4>
+        <h4>11x17&quot; Flier design</h3>
+        <h5>Created in Adobe Illustrator</h4>
 			</article>
 			
 			<article class="piece-wrapper">
@@ -56,8 +55,7 @@
 			  		<img src="images/retina/mr-history-cousin-sleep-cousin-death.jpg" title="Mr History Cousin Sleep Cousin Death Album Artwork" alt="Mr History Cousin Sleep Cousin Death Album Artwork" />
 				</a><br /><br />
 				<h3>Mr. History "Cousin Sleep Cousin Death" Album Artwork</h1>
-				<h4>Album cover illustration
-				commissioned by Mr. History<br />
+				<h4>Album cover illustration commissioned by Mr. History<br />
 				<h5>Created in Adobe Illustrator</h4>
 			</article>
 			
@@ -98,6 +96,7 @@
 			</article>
 	  	
 		</div><!-- .col span_1_of_2 -->
+		
 		<div class="col span_1_of_2">	
 		
 			<article class="piece-wrapper">
@@ -105,9 +104,9 @@
 					<img src="images/retina/mr-history-six-recolor.jpg" title="Mr History August 24th" alt="Mr History August 24th">
 				</a><br /><br />
 				<h3>Mr. History at Riot Room August 24th</h1>
-			  	<h4>11x17&quot; Flier design</h3>
-			  	<h5>Created in Adobe Illustrator</h4>
-		    </article>
+			  <h4>11x17&quot; Flier design</h3>
+			  <h5>Created in Adobe Illustrator</h4>
+		  </article>
 					
 			<article class="piece-wrapper">
 				<a href='images/retina/good-foot-stock-one.jpg' class='fresco' data-fresco-group='gallery'>
@@ -117,8 +116,8 @@
 					<img src="images/retina/good-foot-stock-two.jpg" title="Good Foot Stock Flier" alt="Good Foot Stock Flier">
 				</a><br /><br />
 				<h3>Good Foot Stock Fliers</h1>
-			  	<h4>11x17&quot; Flier design</h3>
-			  	<h5>Created in Adobe Illustrator</h4>
+        <h4>11x17&quot; Flier design</h3>
+			  <h5>Created in Adobe Illustrator</h4>
 			</article>
 		
 			<article class="piece-wrapper">
@@ -126,8 +125,8 @@
 					<img src="images/retina/cobra-skulls-bent-left.jpg" title="Cobra Skulls Flier" alt="Cobra Skulls Flier" />
 				</a><br /><br />
 				<h3>Cobra Skulls W/ Bent Left Flier</h1>
-			  	<h4>11x17&quot; Flier design</h3>
-			  	<h5>Created in Adobe Illustrator &amp; Photoshop</h4>
+			  <h4>11x17&quot; Flier design</h3>
+			  <h5>Created in Adobe Illustrator &amp; Photoshop</h4>
 			 </article>
 
 			<article class="piece-wrapper">
@@ -135,8 +134,8 @@
 					<img src="images/retina/dj-red-beard.jpg" title="DJ Red Beard Flier" alt="DJ Red Beard Flier" />
 				</a><br /><br />
 				<h3>DJ Red Beard Flier</h1>
-			  	<h4>11x17&quot; Flier design</h3>
-			  	<h5>Created in Adobe Illustrator</h4>
+			  <h4>11x17&quot; Flier design</h3>
+			  <h5>Created in Adobe Illustrator</h4>
 			</article>
 			
 			<article class="piece-wrapper">
@@ -147,7 +146,6 @@
 				<h4>11x17&quot; Flier design</h3>
 				<h5>Created in Adobe Illustrator</h4>
 			</article>
-			
 			
 			<article class="piece-wrapper">
 				<a href='images/retina/rhino-deck.jpg' class='fresco' data-fresco-group='gallery'>
@@ -316,98 +314,16 @@
 	<h4>Created in Adobe Illustrator</h4><br />
 -->
 	
-</div><!--GalleryMain-->
+  </section><!--GalleryMain-->
+  
+  <section class="page-footer section group">
+	  <div class="col span_2_of_2">
+	  	<p>
+		  	For more examples of my creative and technical work,<br />
+	  	  please visit my <a href="http://www.lukemichaels.com/">main</a> and <a href="http://www.lukemichaels.com/web.php">web</a> galleries.
+	    </p>
+	  </div>
+  </section>
 
 <!-- :::::::::: Footer :::::::::: -->
-<?php include 'includes/footer.php'; ?>
-
-
-<!-- old -->
-<!--
-
-	<article class="piece-wrapper">
-		<a href='images/retina/mr-history-cousin-sleep-cousin-death.jpg' class='fresco' data-fresco-group='gallery'>
-			<img src="http://www.lukemichaels.com/images/550px_images/RuisRock08.jpg" title="Ruis Rock 2008 Flier" alt="Ruis Rock 2008 Flier" />
-		</a><br /><br />
-		<h1>Ruis Rock 2008 Flier</h1>
-		<h3>11x17&quot; Flier design</h3>
-		<h4>Created in Adobe Illustrator</h4>
-	</article>
-	
-	<article class="piece-wrapper">
-		<a href='images/retina/dj-red-beard.jpg' class='fresco' data-fresco-group='gallery'>
-			<img src="http://www.lukemichaels.com/images/550px_images/Mr_History_at_the_Blue_Fugue.jpg" title="Mr History Blue Fugue Flier" alt="Mr History Blue Fugue Flier" />
-		</a><br /><br />
-		<h1>Mr History @ Blue Fugue</h1>
-	  	<h3>11x17&quot; Flier design</h3>
-	  	<h4>Created in Adobe Illustrator</h4>
-	</article>
-
-	<img src="http://www.lukemichaels.com/images/550px_images/MuseAtRedRocks.jpg" title="Muse At Redrocks Flier" alt="Muse At Redrocks Flier" /><br /><br />
-	<h1>Muse @ Red Rocks Flier</h1>
-  	<h3>11x17&quot; Flier design</h3>
-  	<h4>Created in Adobe Illustrator</h4><br />
-  	
-  	
-	<img src="http://www.lukemichaels.com/images/550px_images/CitizensOfTomorrow.jpg" title="Tokyo Police Club Flier" alt="Tokyo Police Club Flier" /><br /><br />
-	<h1>Tokyo Police Club Flier</h1>
-  	<h3>11x17&quot; Flier design</h3>
-  	<h4>Created in Adobe Illustrator</h4><br />
-
-		<img src="http://www.lukemichaels.com/images/550px_images/MarsVolaAtBeaumontClub.jpg" title="Mars Volta Flier" alt="Mars Volta Flier" /><br /><br />
-	<h1>Mars Volta @ Beaumont Club</h1>
-  	<h3>11x17&quot; Flier design</h3>
-  	<h4>Created in Adobe Illustrator</h4><br />
-
-		<img src="http://www.lukemichaels.com/images/550px_images/IncubusPoster.jpg" title="Incubus Flier" alt="Incubus Flier" /><br /><br />
-	<h1>Incubus @ City Market</h1>
-  	<h3>11x17&quot; Flier design</h3>
-  	<h4>Created in Adobe Illustrator</h4><br />
-
-		<img src="http://www.lukemichaels.com/images/550px_images/WolfmotherVooDooLounge.jpg" title="Wolfmother Flier" alt="Wolfmother Flier" /><br /><br />
-	<h1>Wolfmother @ VooDoo Lounge</h1>
-  	<h3>11x17&quot; Flier design</h3>
-  	<h4>Created in Adobe Illustrator</h4><br />
-
-	<img src="http://www.lukemichaels.com/images/550px_images/DeftonesAtTheCotillion.jpg" title="Deftones Flier" alt="Deftones Flier" /><br /><br />
-	<h1>Deftones @ The Cotillion</h1>
-  	<h3>11x17&quot; Flier design</h3>
-  	<h4>Created in Adobe Illustrator</h4><br />
-
-	<img src="http://www.lukemichaels.com/images/550px_images/Mogwai_US_Tour_08.jpg" title="Mogwai Flier" alt="Mogwai Flier" /><br /><br />
-	<h1>Mogwai US Tour 2008</h1>
-  	<h3>11x17&quot; Flier design</h3>
-  	<h4>Created in Adobe Illustrator</h4><br />
-
-		<img src="http://www.lukemichaels.com/images/550px_images/MrHistory_oct3rd09.jpg" title="Mr History At Emerald Space" alt="Mr History At Emerald Space" /><br /><br />
-	<h1>Mr. History at The Emerald Space</h1>
-  	<h3>11x17&quot; Flier design</h3>
-  	<h4>Created in Adobe Illustrator &amp; Photoshop</h4><br />
-	
-		<img src="http://www.lukemichaels.com/images/550px_images/fairbanks_5_22.jpg" title="Fairbanks at Riot Room" alt="Fairbanks at Riot Room" /><br /><br />
-	<h1>Fairbanks at The Riot Room</h1>
-  	<h3>11x17&quot; Flier design</h3>
-  	<h4>Created in Adobe Illustrator</h4><br />
-
-		<img src="http://www.lukemichaels.com/images/550px_images/MrHistory_Nov1st.jpg" title="Mr History at Crosstown Station 2" alt="Mr History at Crosstown Station 2" /><br /><br />
-	<h1>Mr History at Crostown Station</h1>
-  	<h3>11x17&quot; Flier design</h3>
-  	<h4>Created in Adobe Illustrator</h4><br />
-
-		<img src="http://www.lukemichaels.com/images/550px_images/MrHistory_RiotRoom_May29th.jpg" title="Mr History at Riot Room" alt="Mr History at Riot Room" /><br /><br />
-	<h1>Mr History at The Riot Room</h1>
-  	<h3>11x17&quot; Flier design</h3>
-  	<h4>Created in Adobe Illustrator</h4><br />
-	
-		<img src="http://www.lukemichaels.com/images/550px_images/Good_Foot_Stock_Flier_4.jpg" title="Good Foot Stock Flier" alt="Good Foot Stock Flier" /><br />
-	<img src="http://www.lukemichaels.com/images/550px_images/Good_Foot_Stock_Flier_2.jpg" title="Good Foot Stock 2" alt="Good Foot Stock 2" /><br /><br />
-	<h1>Good Foot Stock Flier</h1>
-	<h3>We did 4 different color treatments for<br /> 
-    this design. The open space between the<br /> 
-    band's name and picture of the band<br />
-  	is used to write in the date & venue<br />
-  	11x17&quot; Flier design</h3>
-  	<h4>Created in Adobe Illustrator</h4><br />
-  	
--->
-
+<?php include 'footer.php'; ?>

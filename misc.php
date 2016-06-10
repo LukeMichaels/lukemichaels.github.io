@@ -1,5 +1,5 @@
 <!-- :::::::::: Header :::::::::: -->
-<?php include 'includes/header.php'; ?>
+<?php include 'header.php'; ?>
 
 <!-- :::::::::: Miscellanious Gallery :::::::::: -->
 <div id="gallery" class="js-masonry">
@@ -124,4 +124,4 @@ are the ones they are using right now.</h3>
 </div><!--GalleryMain-->
 
 <!-- :::::::::: Footer :::::::::: -->
-<?php include 'includes/footer.php'; ?>
+<?php include 'footer.php'; ?>

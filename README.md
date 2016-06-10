@@ -1,1 +1,1 @@
-My Portfolio Site - Built with HTML, CSS, SASS, jQuery, Bootstrap and PHP.
+My Portfolio Site - Built with HTML, CSS, SASS, jQuery, and a little PHP.

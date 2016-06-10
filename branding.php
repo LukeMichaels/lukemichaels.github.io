@@ -1,5 +1,5 @@
 <!-- :::::::::: Header :::::::::: -->
-<?php include 'includes/header.php'; ?>
+<?php include 'header.php'; ?>
 
 <!-- :::::::::: Logos Gallery :::::::::: -->
 <div id="gallery" class="js-masonry">
@@ -73,4 +73,4 @@
 </div><!--GalleryMain-->
 
 <!-- :::::::::: Footer :::::::::: -->
-<?php include 'includes/footer.php'; ?>
+<?php include 'footer.php'; ?>
