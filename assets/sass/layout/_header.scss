@@ -1,0 +1,388 @@
+// ::::::::::::::::::::::::::::::::::::::::
+// paralax header
+// ::::::::::::::::::::::::::::::::::::::::
+.desktop-header {
+  display: block;
+  width: 100%;
+  max-width: 1080px;
+  float: left;
+  background-color: $green;
+
+  img {
+    max-width: 100%;
+  }
+
+} // .desktop-header
+
+.module.parallax {
+  display: block;
+  //width: 100%;
+  height: 550px;
+  //background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: contain;
+/*
+  -o-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
+*/
+
+  @include respond-to(b-2500) {
+    height: 550px;
+    background-size: 100% auto;
+  }
+  @include respond-to(b-2200) {
+    height: 510px;
+    background-size: 100% auto;
+  }
+  @include respond-to(b-2000) {
+    height: 450px;
+    background-size: 100% auto;
+  }
+  @include respond-to(b-1900) {
+    height: 410px;
+    background-size: 100% auto;
+  }
+  @include respond-to(b-1700) {
+    height: 385px;
+    background-size: 100% auto;
+  }
+  @include respond-to(b-1600) {
+    height: 360px;
+    background-size: 100% auto;
+  }
+  @include respond-to(b-1500) {
+    height: 335px;
+    background-size: 100% auto;
+  }
+  @include respond-to(b-1400) {
+    height: 310px;
+    background-size: 100% auto;
+  }
+  @include respond-to(b-1300) {
+    height: 290px;
+    background-size: 100% auto;
+  }
+  @include respond-to(b-1200) {
+    height: 285px;
+    background-size: 100% auto;
+  }
+  @include respond-to(b-1100) {
+    height: 256px;
+    background-size: 100% auto;
+  }
+  @include respond-to(b-1000) {
+    height: 235px;
+    background-size: 100% auto;
+  }
+  @include respond-to(b-900) {
+    height: 205px;
+    background-size: 100% auto;
+  }
+  @include respond-to(b-800) {
+    height: 180px;
+    background-size: 100% auto;
+  }
+  @include respond-to(b-700) {
+    height: 235px;
+    background-position: 50% 0;
+    background-size: 150% auto;
+  }
+  @include respond-to(b-600) {
+    height: 200px;
+    background-position: 50% 0;
+    background-size: 150% auto;
+  }
+  @include respond-to(b-570) {
+    height: 175px;
+    background-position: 50% 0;
+    background-size: 150% auto;
+  }
+  @include respond-to(b-570) {
+    height: 175px;
+    background-position: 50% 0;
+    background-size: 150% auto;
+  }
+  @include respond-to(b-500) {
+    height: 175px;
+    background-position: 50% 0;
+    background-size: 150% auto;
+  }
+  @include respond-to(b-450) {
+    height: 150px;
+    background-position: 50% 0;
+    background-size: 150% auto;
+  }
+  @include respond-to(b-400) {
+    height: 135px;
+  }
+  @include respond-to(b-360) {
+    height: 120px;
+  }
+  @include respond-to(b-320) {
+    height: 140px;
+    background-position: 50% 0;
+    background-size: 190% auto;
+  }
+} // .module.parallax
+
+.module.parallax-1 {
+  background-image: url("../images/ui/header.jpg");
+}
+
+/* :::::::::: Navigation :::::::::: */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 15px;
+}
+
+.navbar {
+  border: 0px;
+  margin-bottom: 0px;
+  min-height: 25px;
+}
+
+.navbar-inner {
+  background: $teal;
+}
+
+.navbar-inner .container {
+  width: 100%;
+  max-width: 900px;
+}
+
+.nav-collapse {
+  position: relative;
+  float: right;
+  padding-top: 10px;
+  width: 100%;
+  min-height: 35px;
+}
+
+.stat-nav {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.stat-nav li {
+  padding-right: 15px;
+}
+
+.drop-nav {
+  position: relative;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.drop-nav li .dropdown {
+  float: left; 
+  width: 25% !important;
+}
+
+.nav li {
+  float: left;
+}
+
+.drop-nav li {
+  float: left;
+  width: 100%;
+}
+
+.nav li a {
+  display: block;
+  position: relative;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  @include respond-to(b-375) {
+    font-size: 0.8rem;
+  }
+  @include respond-to(b-325) {
+    font-size: 0.75rem;
+  }
+  @include respond-to(b-305) {
+    font-size: 0.6rem;
+  }
+}
+
+.nav li a:visited {
+  color: $white;
+}
+
+.nav li a:hover {
+  color: $pink;
+}
+
+.nav li a:hover, .nav li a:focus {
+  background-color: $teal;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: $teal;
+  border-color: $teal;
+}
+
+.nav .caret {
+  border-bottom-color: $white;
+  border-top-color: $white;
+}
+
+.nav a:hover .caret {
+    border-bottom-color: #ca4768;
+    border-top-color: #ca4768;
+}
+
+.dropdown-menu {
+  float: left;
+  position: absolute;
+  margin: 0 0 0 0;
+  top: 100%;
+  left: 0;
+  box-sizing: border-box;
+  padding: 5px;
+  min-width: 75px;
+  border: 0px;
+  border-radius: 0px;
+  box-shadow: none !important;
+  display: none;
+  font-size: 14px; 
+  list-style: none outside none; 
+  background: $teal;
+  z-index: 1000;
+
+  a {
+    margin-right: 20px;
+    padding: 10px 0;
+    text-align: right;
+    line-height: 1;
+  }
+} // .dropdown-menu
+
+.dropdown-menu li ul {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li a {
+  position: relative;
+  float: left;
+  width: 100%;
+  color: $white;
+  display: block;
+  font-weight: normal;
+  line-height: 0;
+  padding: 3px 0px;
+  text-decoration: none;
+  &:hover {
+    color: #ca4768;
+  }
+  &:visited {
+    color: #ca4768;
+  }
+}
+
+.name-wrapper {
+  float: left;
+  padding-left: 3px;
+  width: 15%;
+  min-height: 35px;
+  color: $white;
+}
+
+.name {
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  height: 10px;
+  font-size: 1em;
+  color: $white;
+}
+
+@media only screen and (max-width : 800px) {
+
+  #share-icons {
+    display: none;
+  }
+
+  #feature {
+    display: none;
+  }
+
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  float: left;
+  padding: 1% 0;
+  width: 100%;
+}
+
+.about-icon {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.about-link {
+  float: right;
+  padding-left: 2%;
+  width: 73%;
+  text-align: left;
+}
+
+.service-icon {
+  box-sizing: border-box;
+  padding: 0 15px 0 5px;
+  text-align: center;
+  color: $purple;
+}
+
+.service-link {
+  text-align: left;
+}
+
+
+// ::::::::::::::::::::::::::::::::::::::::
+// top nav
+// ::::::::::::::::::::::::::::::::::::::::
+#stickyheader {
+  display: none; // hide this until the user scrolls down
+  width: 100%;
+  position: fixed;
+  margin: 0 auto;
+  background-color: $teal;
+  z-index: 10;
+
+  nav {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  ul {
+    float: right;
+    margin-right: 20px;
+  }
+
+  a {
+    box-sizing: border-box;
+    padding: 15px 10px 10px 10px;
+    color: $white;
+    &:hover {
+      background-color: $pink;
+    }
+  }
+} // #stickyheader
+
+.nav-up {
+  top: -45px;
+}

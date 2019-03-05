@@ -1,0 +1,127 @@
+.contact {
+
+  .page-header h1 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+} // .contact
+
+
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto 20px; 
+  padding: 0 2%;
+  width: 64.5%;
+  text-align: left;
+  font-size: 1.2rem;
+  @include respond-to(b-768) {
+    width: 96%;
+    margin: 0 2%;
+  }
+  @include respond-to(b-605) {
+    margin: 20px auto; 
+  }
+
+  form {
+    width: 100%;
+  }
+
+  label {
+    display: block;
+    width: 100%;
+    margin: 20px 0 5px;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+  }
+
+  input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 22px 15px 15px;
+    border: 0;
+    color: $purple;
+    background-color: $white;
+  }
+
+} // .form
+
+.form-buttons {
+  float: right;
+  width: 100%;
+  margin-top: 20px;
+  text-align: right;
+
+  button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px 50px 20px;
+    font-family: $font-regular;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    color: $white;
+    background-color: $teal;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include respond-to(b-360) {
+      padding: 15px 25px;
+    }
+    &:hover {
+      background-color: $pink;
+    }
+  }
+
+} // .form-buttons 
+
+#share-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 20px auto 0;
+  border: 0;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  @include respond-to(b-605) {
+    display: none;
+  }
+}
+
+#share-icons li {
+  background: url('../images/ui/2014-Social-Icons.jpg') 0 0 no-repeat;
+  //position: absolute;
+  height: 75px;
+  display: block;
+  list-style: none;
+}
+
+#share-icons a {
+  height: 75px;
+  display: block;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+#share-icons #email-social { left: 0px; height: 75px; width:75px; }
+#share-icons #twitter-social { left: 75px; background-position: -75px 0; height: 75px; width: 75px; }
+#share-icons #instagram-social { left: 150px; background-position: -150px 0; height: 75px; width: 75px; }
+#share-icons #facebook-social { left: 225px; background-position: -225px 0; height: 75px; width: 75px; }
+#share-icons #flickr-social { left: 300px; background-position: -300px 0; height: 75px; width: 75px; }
+#share-icons #linkedin-social { left: 375px; background-position: -375px 0; height: 75px; width: 75px; }
+#share-icons #behance-social { left: 450px; background-position: -450px 0; height: 75px; width: 75px; }
+#share-icons #email-social a:hover { background: url('../images/ui/2014-Social-Icons.jpg') 0px -75px no-repeat; }
+#share-icons #twitter-social a:hover { background: url('../images/ui/2014-Social-Icons.jpg') -75px -75px no-repeat; }
+#share-icons #instagram-social a:hover { background: url('../images/ui/2014-Social-Icons.jpg') -150px -75px no-repeat; }
+#share-icons #facebook-social a:hover { background: url('../images/ui/2014-Social-Icons.jpg') -225px -75px no-repeat; }
+#share-icons #flickr-social a:hover { background: url('../images/ui/2014-Social-Icons.jpg') -300px -75px no-repeat; }
+#share-icons #linkedin-social a:hover { background: url('../images/ui/2014-Social-Icons.jpg') -375px -75px no-repeat; }
+#share-icons #behance-social a:hover { background: url('../images/ui/2014-Social-Icons.jpg') -450px -75px no-repeat; }

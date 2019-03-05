@@ -81,6 +81,7 @@ if(isset($_POST['email'])) {
 					<h1>Thank you for contacting me</h1>
 					<h3>I will get back to you ASAP</h3>
 				<br><br><br>
+				  <a href="/">Return home</a>
 			</center>
 	 	<?php include 'includes/footer.php'; ?>
 	

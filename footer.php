@@ -1,37 +1,18 @@
-   	<!-- :::::::::: Footer Image :::::::::: -->
-   	<img src="./images/ui/footer-1080.jpg" class="img-responsive" alt="Copyright Luke Michaels">
-   
-   </div><!--wrapper-->
-   
-    <script src="//code.jquery.com/jquery.js"></script>
-    <script src="js/modernizr-2.5.3.min.js"></script>
-    <script src="js/jquery.rwdImageMaps.min.js"></script>
-    <script src="js/jquery.imagesloaded.js"></script>
-    <script src="js/jquery.colorbox-min.js"></script>
-    <script src="js/fresco.js"></script>
-    
-    <script type="text/javascript">
-		  $(function() {
-				    
-		    /* :::::::::: dynamic image maps :::::::::: */
-		    $('img[usemap]').rwdImageMaps();
-		    $('area').on('click', function() {
-				  /* alert($(this).attr('alt') + ' clicked'); */
-			  });
+  <img src="assets/images/ui/footer.jpg" class="img-responsive" alt="Footer Image">
+  <div class="copyright"><span style="padding: 0 5px 2px 0; font-family: Helvetica Neue,Helvetica,Arial,sans-serif;">&copy;</span> <?php echo date("Y"); ?> Luke Michaels</div>
+</div><!--wrapper-->
 
-        /* :::::::::: Show/Hide Top Nav on Scroll :::::::::: */
-        $(window).scroll(function () {
-        if ( $(this).scrollTop() > 200 && !$('#stickyheader').hasClass('open') ) {
-          $('#stickyheader').addClass('open');
-          $('#stickyheader').slideDown();
-         } else if ( $(this).scrollTop() <= 200 ) {
-          $('#stickyheader').removeClass('open');
-          $('#stickyheader').slideUp();
-        }
-      });
-			
-	    })(jQuery);
-    </script>
+<script src="assets/js/jquery-min.js"></script>
+<script src="assets/js/min/scripts-min.js"></script>
 
-  </body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-25304774-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
 </html>

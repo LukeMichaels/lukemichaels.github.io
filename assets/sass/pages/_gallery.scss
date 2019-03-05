@@ -1,0 +1,71 @@
+.piece-overlay {
+  position : fixed;
+  top : 0;
+  left : 0;
+  width : 100%;
+  height : 100%;
+  background : #FFFFFF;
+  z-index : 5;
+  display : none;
+  overflow-y : scroll;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+  img {
+    width: 100%;
+  }
+  .span_3_of_5 img {
+    margin-bottom: 40px;
+  }
+  .span_1_of_2 img {
+    margin-bottom: 17px;
+  }
+  .overlay-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin: 65px auto 30px;
+
+    .row {
+      justify-content: flex-end;
+    }
+
+  }
+  button {
+    float: right;
+    margin-top: 10px;
+    border: 0;
+    color: $teal;
+    background-color: $white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    &:hover {
+      color: $pink;
+    }
+  }
+
+  .escape-message {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .overlay-body {
+    width: 100%;
+    float: left;
+  }
+  .project-type {
+    color: $pink;
+    font-size: 1rem;
+  }
+  p {
+    width: 100%;
+    font-size: 1rem;
+  }
+  em {
+    width: 100%;
+    margin-top: 20px;
+  }
+} // .piece-overlay
