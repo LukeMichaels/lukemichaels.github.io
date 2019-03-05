@@ -5,6 +5,43 @@
     text-align: center;
   }
 
+	.email-button-wrap {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 20px;
+		margin: 21px auto 80px;
+
+		a {
+			width: 100%;
+			max-width: 514px;
+			height: 75px;
+			display: block;
+	    box-sizing: border-box;
+	    padding: 25px 50px 20px;
+	    margin: 0 auto;
+	    font-family: $font-regular;
+	    font-size: 1em;
+	    outline: none;
+	    color: $white;
+	    border: 2px solid $white;
+			border-radius: 25px;
+	    cursor: pointer;
+	    text-align: center;
+	    text-decoration: none;
+	    text-transform: uppercase;
+	    font-size: 32px;
+	    line-height: 30px;
+			@include respond-to(b-360) {
+      	padding: 15px 25px;
+    	}
+			&:hover {
+				color: $pink;
+				border-color: $pink;
+			}
+		}
+		
+	}
+
 } // .contact
 
 
