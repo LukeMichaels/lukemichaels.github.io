@@ -5,34 +5,31 @@
 
     <!-- :::::::::: About Me :::::::::: -->
     <div class="two-columns-main">
-      <h1>Hi, I'm Luke.</h1>  
+      <h1 style="color: #c94768;">Hi, I'm Luke.</h1>  
       <p>
         I enjoy cycling, tea, post-rock, programming, and design.
       </p>
-
       <p>
         In 2005 I graduated with a computer science degree in<br />
         digital media. Since that time I've picked up a broad range<br />
         of design and development experience in several mediums<br /> 
         including web, print, video, and screen-printing.
       </p>
-
       <p>
-        Over-all I have 13 years of professional experience and<br /> 
-        over 19 years of personal experience in graphic design,<br />
+        Over-all I have 20 years of professional experience and<br /> 
+        over 26 years of personal experience in graphic design,<br />
         web design & development, typesetting, print layout, branding,<br />
         and everything else that comes along with being a full service<br />
         new media designer.
       </p>
-
       <p>
         My primary focus is in UX and front-end web design. I aim to<br /> 
         create aesthetically pleasing sites with intuitive user experiences.
       </p><br />
 
       <span class="about-title">Skills - Primary</span><br />
-      <span class="about-heading">Front-End Web Development</span> - <span class="about-detail">HTML, CSS, Sass, JavaScript, jQuery, PHP and MySql.</span><br />  
-      <span class="about-heading">Graphic Design</span> - <span class="about-detail">Digital content creation, layout, typography, user interface and user experience.</span><br />
+      <span class="about-heading">Front-End Web Development</span> - <span class="about-detail">HTML, CSS, Sass, JavaScript, jQuery, PHP, and MySql.</span><br />  
+      <span class="about-heading">Graphic Design</span> - <span class="about-detail">Digital content creation, layout, typography, user interface, and user experience.</span><br />
       <span class="about-heading">eCommerce</span> - <span class="about-detail">Magento, WooCommerce, Volusion, X-Cart, Yahoo Store.</span><br />
       <span class="about-heading">Version Control</span> - <span class="about-detail">Git, GitHub, Bitbucket.</span><br />
       <span class="about-heading">Content Management</span> - <span class="about-detail">WordPress, Drupal, Ghost, Joomla.</span><br /> 
@@ -49,11 +46,8 @@
       <br /><br />
 
       <span class="about-title">Software Proficiency</span>
-      <p class="about-heading">
-        Illustrator, Photoshop, InDesign, Sketch, Coda, Grunt, Bower, Yeoman, Kaleidoscope, Dreamweaver,<br /> 
-        FontExplorer, Pages, Numbers, Keynote, Excel, Word, PowerPoint, Emma, MailChimp,<br />
-        Tower, CodeKit, Terminal, Atom.io, Viseo, MAMP, Dropbox, CodeBox, xScope, OS X, iOS,<br />
-        Flash, Premiere, Linux(Fedora), Windows... I'm a big fan of trying out new software!
+      <p class="about-heading" style="max-width: 500px; margin-bottom: 0;">
+        Illustrator, Photoshop, InDesign, Sketch, Nova, VS Code, Grunt, Bower, Yeoman, Kaleidoscope, Dreamweaver, Pages, Numbers, Keynote, Excel, Word, PowerPoint, Emma, MailChimp, Tower, CodeKit, Terminal, Atom.io, Viseo, MAMP, Dropbox, CodeBox, xScope, OS X, iOS, Premiere, Linux(Fedora), Windows... I'm a big fan of trying out new software!
       </p><br />
 
       <span class="about-title">Academic Experience</span><br />
@@ -71,7 +65,7 @@
       <span class="about-heading">Networks and Operating Systems</span> - <span class="about-detail">Networking and computer maintenance.</span><br />
       <span class="about-heading">Digital Media Production</span> - <span class="about-detail">Video Editing and DVD authoring.</span><br /><br />
 
-      <p>
+      <p style="margin-bottom: 0;">
         The web is always evolving. The way I build sites now hardly even resembles<br /> 
         the way that I built them back in 1995 (or 2005 for that matter). I never<br /> 
         stop learning new ways to improve.
@@ -82,9 +76,8 @@
       <span class="about-heading">IDE</span> - <span class="about-detail">Coda</span><br />
       <span class="about-heading">CSS Preprocessor</span> - <span class="about-detail">Sass</span><br />
       <span class="about-heading">Novel</span> - <span class="about-detail">Cat's Cradle</span><br />
-      <span class="about-heading">Band</span> - <span class="about-detail">Mogwai</span><br />
-      <span class="about-heading">Film</span> - <span class="about-detail">The Big Lebowski</span><br />
-      <span class="about-heading">Micro-Brew</span> - <span class="about-detail">Boneyard Notorious</span><br />
+      <span class="about-heading">Musician</span> - <span class="about-detail">Flying Lotus</span><br />
+      <span class="about-heading">Film</span> - <span class="about-detail">Funeral Parade of Roses</span><br />
       <span class="about-heading">Ninja Turtle</span> - <span class="about-detail">Donatello</span><br />
       <span class="about-heading">Video Game</span> - <span class="about-detail">ICO</span><br />
       <span class="about-heading">Board Game</span> - <span class="about-detail">Letter Tycoon</span><br />
@@ -96,7 +89,7 @@
     <div class="two-columns-left">
       <img src="assets/images/retina/me-7.png" border="0"/><br />
       <div class="about-buttons">
-        <a href="/Luke_Michaels_Resume_2017.pdf" alt="download my resume">
+        <a href="/Luke_Michaels_Resume_2025.pdf" title="download my resume">
           <div class="about-icon">
             <i class="fa fa-paperclip"></i>
           </div>
@@ -104,7 +97,7 @@
             Resume
           </div>
         </a>
-        <a href="mailto:lmichaels@gmail.com" title="Email" alt="Email">
+        <a href="mailto:lmichaels@gmail.com" title="Email">
           <div class="about-icon">
             <i class="fa fa-envelope"></i>
           </div>
@@ -120,7 +113,7 @@
             Phone
           </div>
         </a>
-        <a href="https://github.com/LukeMichaels" title="GitHub" alt="GitHub" target="_blank">
+        <a href="https://github.com/LukeMichaels" title="GitHub" target="_blank">
           <div class="about-icon">
             <i class="fa fa-github"></i>
           </div>
@@ -128,7 +121,7 @@
              GitHub
           </div>
         </a>
-        <a href="http://www.linkedin.com/in/lmichaels" title="Linkedin" alt="Linkedin" target="_blank">
+        <a href="http://www.linkedin.com/in/lmichaels" title="Linkedin" target="_blank">
           <div class="about-icon">
             <i class="fa fa-linkedin"></i>
           </div>
@@ -136,15 +129,7 @@
             Linkedin
           </div>
         </a>
-        <a href="http://www.twitter.com/LukeMichaels" title="Twitter" alt="Twitter" target="_blank">
-          <div class="about-icon">
-            <i class="fa fa-twitter"></i>
-          </div>
-          <div class="about-link-title"> 
-            Twitter
-          </div>
-        </a>
-        <a href="http://instagram.com/LukeMichaels" title="Instagram" alt="Instagram" target="_blank">
+        <!-- <a href="http://instagram.com/LukeMichaels" title="Instagram" target="_blank">
           <div class="about-icon">
             <i class="fa fa-instagram"></i>
           </div>
@@ -152,14 +137,14 @@
             Instagram
           </div>
         </a>
-        <a href="http://www.facebook.com/Luke.Michaels" title="Facebook" alt="Facebook" target="_blank">
+        <a href="http://www.facebook.com/Luke.Michaels" title="Facebook" target="_blank">
           <div class="about-icon">
             <i class="fa fa-facebook"></i>
           </div>
           <div class="about-link-title">
             Facebook
           </div> 
-        </a>
+        </a> -->
       </div><!-- .about-buttons -->
     </div><!-- .two-columns-left -->
 

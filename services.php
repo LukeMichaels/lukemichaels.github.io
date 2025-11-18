@@ -7,7 +7,7 @@
     <section class="page-header section group">
     	
     	<div class="col span_2_of_2">
-        <h1>How can I help you?</h1>
+        <h1 style="color: #c94768;">How can I help you?</h1>
         <p>
     		  I'm accepting contract work on a case-by-case basis. If you represent a non-profit, especially if it deals with animal rights or environmental causes, please <a href="mailto:lmichaels@gmail.com" title="Email" alt="Email">contact me</a> for any of the following services:
     	  </p>
