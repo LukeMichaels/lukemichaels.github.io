@@ -1,51 +1,40 @@
-// ::::::::::::::::::::::::::::::::::::::::
-// services page styles
-// ::::::::::::::::::::::::::::::::::::::::
+@use "../utils/variables" as *;
+
 .services {
   box-sizing: border-box;
   padding: 0 20px;
-}
 
-.piece-wrapper {
-  float: left;
-  margin: 2% 0;
-  padding: 2%;
-  background-color: $white;
-}
-
-/* :::::::::: Grid of Two */
-.two-columns-main {
-  float: right; 
-  width: 75%;
-  box-sizing: border-box;
-  padding: 0 10px;
-}
-
-.two-columns-left {
-  float: left; 
-  padding: 2% 2%; 
-  width: 21%;  
-}
-
-.two-columns-left img {
-  width: 100%; 
-}
-
-@media only screen and (max-width: 480px) {
+  .piece-wrapper {
+    float: left;
+    margin: 2% 0;
+    padding: 2%;
+    background-color: $white;
+  }
 
   .two-columns-main {
-    float: left; 
-    width: 100%;
+    float: right; 
+    width: 75%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    @include respond-to(b-480) {
+      float: left; 
+      width: 100%;
+    }
   }
 
   .two-columns-left {
-    float: right; 
+    float: left; 
     padding: 2% 2%; 
-    width: 100%;  
+    width: 21%;
+    @include respond-to(b-480) {
+      float: right; 
+      padding: 2% 2%; 
+      width: 100%; 
+    }
   }
 
-}
+  .two-columns-left img {
+    width: 100%; 
+  }
 
-.ServicesHeading {
-  color: $teal;
-}
+} // .services

@@ -1,56 +1,117 @@
-.about-title {
-  text-transform: uppercase;
-  font-size: 1.2em;
-  color: $purple;
-}
-
-.about-heading {
-  font-size: 1em;
-  color: $pink;
-}
-
-.about-detail {
-  font-size: 1em;
-  color: $teal;
-}
-
-.about-buttons {
-  width: 100%;
-  max-width: 450px;
-  margin: 25px auto;
-
-  a {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 15px 0 10px;
-    margin-bottom: 15px;
-    background-color: $teal;
-    text-transform: uppercase;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    &:hover {
-      background-color: $pink;
-    }
-  }
-
-  tr {
-    width: 100%;
-    margin-bottom: 10px;
-    
-  }
-
-  .about-icon {
-    color: $white;
-  }
-
-  .about-link-title {
-    color: $white;
-  }
-
-} // .about-buttons
+@use "../utils/variables" as *;
 
 .about {
+  width: 100%;
+  padding: 70px 20px;
+
+  .about-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    .about-right {
+      order: 2;
+      width: 75%;
+    }
+
+    .about-left {
+      order: 1;
+      width: 25%;
+    }
+
+  } // .about-columns
+
+  .about-group {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 0 40px 0;
+  }
+
+  .about-title {
+    margin: 0 0 0 0;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: $purple;
+  }
+
+  .about-heading {
+    margin: 0 0 0 0;
+    font-size: 1em;
+    line-height: 1.2em;
+    color: $pink;
+  }
+
+  .about-detail {
+    margin: 0 0 10px 0;
+    font-size: 1em;
+    line-height: 1.2em;
+    color: $teal;
+  }
+
+  .about-buttons {
+    width: 100%;
+    max-width: 450px;
+    margin: 25px auto;
+
+    a {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 15px 0 10px;
+      margin-bottom: 15px;
+      background-color: $teal;
+      text-transform: uppercase;
+      font-size: 1rem;
+      line-height: 1.25rem;
+      &:hover {
+        background-color: $pink;
+      }
+      &:active {
+        border: 2px solid $pink;
+      }
+    }
+
+    tr {
+      width: 100%;
+      margin-bottom: 10px;
+      
+    }
+
+    .about-icon {
+      color: $white;
+    }
+
+    .about-link-title {
+      color: $white;
+    }
+
+  } // .about-buttons
+
+  .two-columns-main {
+    float: right; 
+    width: 75%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    @include respond-to(b-480) {
+      float: left; 
+      width: 100%;
+    }
+  }
+  
+  .two-columns-left {
+    float: left; 
+    padding: 2% 2%; 
+    width: 21%;
+    @include respond-to(b-480) {
+      float: right; 
+      padding: 2% 2%; 
+      width: 100%; 
+    }
+  }
+  
+  .two-columns-left img {
+    width: 100%; 
+  }
 
   .two-columns-main {
     @include respond-to(b-860) {
@@ -67,6 +128,9 @@
       display: block;
       max-width: 450px;
       margin: 0 auto;
+      @include respond-to(b-860) {
+        max-width: 250px;
+      }
     }
 
   } // .two-columns-left
