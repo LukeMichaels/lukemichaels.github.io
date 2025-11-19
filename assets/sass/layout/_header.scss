@@ -18,7 +18,7 @@
   min-height: 290px;
   height: auto;
   padding-top: 20%;
-  background-image: url("../images/ui/header.jpg");
+  background-image: url("../images/ui/header.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   //background-position: center center;
@@ -193,7 +193,7 @@
 }
 
 .nav li a:hover {
-  color: $pink;
+  color: $black;
 }
 
 .nav li a:hover, .nav li a:focus {
@@ -205,14 +205,20 @@
   border-color: $teal;
 }
 
+.nav .current-page {
+  text-decoration: underline;
+  color: $black !important;
+  pointer-events: none;
+}
+
 .nav .caret {
   border-bottom-color: $white;
   border-top-color: $white;
 }
 
 .nav a:hover .caret {
-    border-bottom-color: #ca4768;
-    border-top-color: #ca4768;
+    border-bottom-color: $pink;
+    border-top-color: $pink;
 }
 
 .dropdown-menu {
@@ -257,10 +263,10 @@
   padding: 3px 0px;
   text-decoration: none;
   &:hover {
-    color: #ca4768;
+    color: $pink;
   }
   &:visited {
-    color: #ca4768;
+    color: $pink;
   }
 }
 
@@ -339,10 +345,13 @@ tr {
   background-color: $teal;
   z-index: 10;
 
-  nav {
-    max-width: 1080px;
-    margin: 0 auto;
-  }
+ 
+} // #stickyheader
+
+nav {
+  max-width: 1080px;
+  margin: 0 auto;
+  background-color: $teal;
 
   ul {
     float: right;
@@ -357,7 +366,8 @@ tr {
       background-color: $pink;
     }
   }
-} // #stickyheader
+
+} // nav
 
 .nav-up {
   top: -45px;

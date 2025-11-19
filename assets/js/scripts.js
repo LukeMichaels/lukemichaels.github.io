@@ -1,205 +1,233 @@
-var $ = jQuery;
-
-$(document).ready(function($) {
-  var filterType = 'alpha';
-
+/* global jQuery */
+jQuery(function ($) {
   /* :::::::::: Show/Hide Top Nav on Scroll :::::::::: */
-  $(window).scroll(function () {
-    if ( $(this).scrollTop() > 100 && !$('#stickyheader').hasClass('open') ) {
-      $('#stickyheader').addClass('open');
-      $('#stickyheader').slideDown();
-     } else if ( $(this).scrollTop() <= 100 ) {
-      $('#stickyheader').removeClass('open');
-      $('#stickyheader').slideUp();
+  $(window).on('scroll', function () {
+    if ($(this).scrollTop() > 100 && !$('#stickyheader').hasClass('open')) {
+      $('#stickyheader').addClass('open').slideDown();
+    } else if ($(this).scrollTop() <= 100) {
+      $('#stickyheader').removeClass('open').slideUp();
     }
   });
 
+  /* :::::::::: Accessible Gallery Modals + Arrow Navigation :::::::::: */
 
-  /* :::::::::: Gallery Functionality :::::::::: */
-  $('#ofri-button').on('click', function () {
-    $('#ofri-overlay').fadeIn(500);
-  });
-  $('#ofri-close-button').on('click', function(e) { 
-    $('#ofri-overlay').fadeOut(500); 
-  });
-  $('#rogue-button').on('click', function () {
-    $('#rogue-overlay').fadeIn(500);
-  });
-  $('#rogue-close-button').on('click', function(e) { 
-    $('#rogue-overlay').fadeOut(500); 
-  });
-  $('#bobs-blog-button').on('click', function () {
-    $('#bobs-blog-overlay').fadeIn(500);
-  });
-  $('#bobs-blog-close-button').on('click', function(e) { 
-    $('#bobs-blog-overlay').fadeOut(500); 
-  });
-  $('#bobs-button').on('click', function () {
-    $('#bobs-overlay').fadeIn(500);
-  });
-  $('#bobs-close-button').on('click', function(e) { 
-    $('#bobs-overlay').fadeOut(500); 
-  });
-  $('#bobs-marquees-button').on('click', function () {
-    $('#bobs-marquees-overlay').fadeIn(500);
-  });
-  $('#bobs-marquees-close-button').on('click', function(e) { 
-    $('#bobs-marquees-overlay').fadeOut(500); 
-  });
-  $('#portland-marathon-button').on('click', function () {
-    $('#portland-marathon-overlay').fadeIn(500);
-  });
-  $('#portland-marathon-close-button').on('click', function(e) { 
-    $('#portland-marathon-overlay').fadeOut(500); 
-  });
-  $('#radiohead-button').on('click', function () {
-    $('#radiohead-overlay').fadeIn(500);
-  });
-  $('#radiohead-close-button').on('click', function(e) { 
-    $('#radiohead-overlay').fadeOut(500); 
-  });
-  $('#eits-button').on('click', function () {
-    $('#eits-overlay').fadeIn(500);
-  });
-  $('#eits-close-button').on('click', function(e) { 
-    $('#eits-overlay').fadeOut(500); 
-  });
-  $('#fairbanks-mr-history-button').on('click', function () {
-    $('#fairbanks-mr-history-overlay').fadeIn(500);
-  });
-  $('#fairbanks-mr-history-close-button').on('click', function(e) { 
-    $('#fairbanks-mr-history-overlay').fadeOut(500); 
-  });
-  $('#mr-history-cousin-sleep-cousin-death-button').on('click', function () {
-    $('#mr-history-cousin-sleep-cousin-death-overlay').fadeIn(500);
-  });
-  $('#mr-history-cousin-sleep-cousin-death-close-button').on('click', function(e) { 
-    $('#mr-history-cousin-sleep-cousin-death-overlay').fadeOut(500); 
-  });
-  $('#good-foot-stock-button').on('click', function () {
-    $('#good-foot-stock-overlay').fadeIn(500);
-  });
-  $('#good-foot-stock-close-button').on('click', function(e) { 
-    $('#good-foot-stock-overlay').fadeOut(500); 
-  });
-  $('#cobra-skulls-bent-left-button').on('click', function () {
-    $('#cobra-skulls-bent-left-overlay').fadeIn(500);
-  });
-  $('#cobra-skulls-bent-left-close-button').on('click', function(e) { 
-    $('#cobra-skulls-bent-left-overlay').fadeOut(500); 
-  });
-  $('#dj-red-beard-button').on('click', function () {
-    $('#dj-red-beard-overlay').fadeIn(500);
-  });
-  $('#dj-red-beard-close-button').on('click', function(e) { 
-    $('#dj-red-beard-overlay').fadeOut(500); 
-  });
-  $('#newgameplus-button').on('click', function () {
-    $('#newgameplus-overlay').fadeIn(500);
-  });
-  $('#newgameplus-close-button').on('click', function(e) { 
-    $('#newgameplus-overlay').fadeOut(500); 
-  });
-  $('#mr-history-six-button').on('click', function () {
-    $('#mr-history-six-overlay').fadeIn(500);
-  });
-  $('#mr-history-six-close-button').on('click', function(e) { 
-    $('#mr-history-six-overlay').fadeOut(500); 
-  });
-  $('#mr-history-one-button').on('click', function () {
-    $('#mr-history-one-overlay').fadeIn(500);
-  });
-  $('#mr-history-one-close-button').on('click', function(e) { 
-    $('#mr-history-one-overlay').fadeOut(500); 
-  });
-  $('#mr-history-five-button').on('click', function () {
-    $('#mr-history-five-overlay').fadeIn(500);
-  });
-  $('#mr-history-five-close-button').on('click', function(e) { 
-    $('#mr-history-five-overlay').fadeOut(500); 
-  });
-  $('#mr-history-gene-button').on('click', function () {
-    $('#mr-history-gene-overlay').fadeIn(500);
-  });
-  $('#mr-history-gene-close-button').on('click', function(e) { 
-    $('#mr-history-gene-overlay').fadeOut(500); 
-  });
-  $('#grains-of-discovery-button').on('click', function () {
-    $('#grains-of-discovery-overlay').fadeIn(500);
-  });
-  $('#grains-of-discovery-close-button').on('click', function(e) { 
-    $('#grains-of-discovery-overlay').fadeOut(500); 
-  });
-  $('#mr-history-four-button').on('click', function () {
-    $('#mr-history-four-overlay').fadeIn(500);
-  });
-  $('#mr-history-four-close-button').on('click', function(e) { 
-    $('#mr-history-four-overlay').fadeOut(500); 
-  });
-  $('#cca-button').on('click', function () {
-    $('#cca-overlay').fadeIn(500);
-  });
-  $('#cca-close-button').on('click', function(e) { 
-    $('#cca-overlay').fadeOut(500); 
-  });
-  $('#kog-button').on('click', function () {
-    $('#kog-overlay').fadeIn(500);
-  });
-  $('#kog-close-button').on('click', function(e) { 
-    $('#kog-overlay').fadeOut(500); 
-  });
-  $('#lamarzocco-button').on('click', function () {
-    $('#lamarzocco-overlay').fadeIn(500);
-  });
-  $('#lamarzocco-close-button').on('click', function(e) { 
-    $('#lamarzocco-overlay').fadeOut(500); 
-  });
-  $('#progressive-button').on('click', function () {
-    $('#progressive-overlay').fadeIn(500);
-  });
-  $('#progressive-close-button').on('click', function(e) { 
-    $('#progressive-overlay').fadeOut(500); 
-  });
-  $('#supercrown-button').on('click', function () {
-    $('#supercrown-overlay').fadeIn(500);
-  });
-  $('#supercrown-close-button').on('click', function(e) { 
-    $('#supercrown-overlay').fadeOut(500); 
-  });
-
-  $('#thumbs img').click(function(){
-    $('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
-  });
-
-});
-
-
-$(document).on( 'keydown', function (e) {
-  if(e.keyCode === 27) { // ESC
-    $('#ofri-overlay').fadeOut(500);
-    $('#rogue-overlay').fadeOut(500);
-    $('#bobs-blog-overlay').fadeOut(500);
-    $('#bobs-overlay').fadeOut(500);
-    $('#bobs-marquees-overlay').fadeOut(500);
-    $('#portland-marathon-overlay').fadeOut(500);
-    $('#radiohead-overlay').fadeOut(500);
-    $('#eits-overlay').fadeOut(500);
-    $('#fairbanks-mr-history-overlay').fadeOut(500);
-    $('#mr-history-cousin-sleep-cousin-death-overlay').fadeOut(500);
-    $('#good-foot-stock-overlay').fadeOut(500);
-    $('#cobra-skulls-bent-left-overlay').fadeOut(500);
-    $('#dj-red-beard-overlay').fadeOut(500);
-    $('#newgameplus-overlay').fadeOut(500);
-    $('#mr-history-six-overlay').fadeOut(500);
-    $('#mr-history-one-overlay').fadeOut(500);
-    $('#mr-history-five-overlay').fadeOut(500);
-    $('#mr-history-gene-overlay').fadeOut(500);
-    $('#grains-of-discovery-overlay').fadeOut(500);
-    $('#mr-history-four-overlay').fadeOut(500);
-    $('#cca-overlay').fadeOut(500);
-    $('#kog-overlay').fadeOut(500);
-    $('#lamarzocco-overlay').fadeOut(500);
-    $('#progressive-overlay').fadeOut(500);
-    $('#supercrown-overlay').fadeOut(500);
+  var $mainContent = $('#main');
+  if (!$mainContent.length) {
+    $mainContent = $('.wrapper');
   }
+
+  var $triggers = $('.piece-trigger');
+  // DOM order of triggers defines gallery order
+  var overlayIds = $triggers
+    .map(function () {
+      return $(this).data('overlay');
+    })
+    .get();
+
+  var $activeOverlay = null;
+  var $lastFocusedElement = null;
+  var currentIndex = -1;
+
+  function getFocusableElements($container) {
+    return $container
+      .find('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+      .filter(':visible');
+  }
+
+  function showOverlay($overlay) {
+    if (!$overlay.length) return;
+
+    $activeOverlay = $overlay;
+
+    $overlay
+      .stop(true, true)
+      .css('display', 'none')
+      .attr('aria-hidden', 'false')
+      .fadeIn(200, function () {
+        // Prefer focusing the Close button for clarity
+        var $closeBtn = $overlay.find('.overlay-close').first();
+        if ($closeBtn.length) {
+          $closeBtn.focus();
+        } else {
+          // Fallback to first focusable element
+          var $focusable = getFocusableElements($overlay);
+          if ($focusable.length) {
+            $focusable.first().focus();
+          } else {
+            $overlay.attr('tabindex', '-1').focus();
+          }
+        }
+      });
+  }
+
+  function openOverlayFromTrigger($overlay, index) {
+    if (!$overlay.length) return;
+
+    $lastFocusedElement = $(document.activeElement);
+    currentIndex = index;
+
+    $mainContent.attr('aria-hidden', 'true');
+    showOverlay($overlay);
+  }
+
+  // Smooth crossfade between overlays when switching
+  function switchOverlay(newIndex) {
+    if (!overlayIds.length) return;
+
+    if (newIndex < 0) {
+      newIndex = overlayIds.length - 1;
+    } else if (newIndex >= overlayIds.length) {
+      newIndex = 0;
+    }
+
+    var nextId = overlayIds[newIndex];
+    var $nextOverlay = $('#' + nextId);
+    if (!$nextOverlay.length) return;
+
+    var $current = $activeOverlay;
+    currentIndex = newIndex;
+
+    if ($current && $current[0] !== $nextOverlay[0]) {
+      $current.stop(true, true).fadeOut(200, function () {
+        $current.attr('aria-hidden', 'true').hide();
+      });
+    }
+
+    showOverlay($nextOverlay);
+  }
+
+  function closeOverlay() {
+    if (!$activeOverlay) return;
+
+    $activeOverlay
+      .attr('aria-hidden', 'true')
+      .fadeOut(200, function () {
+        if ($lastFocusedElement && $lastFocusedElement.length) {
+          $lastFocusedElement.focus();
+        }
+      });
+
+    $mainContent.removeAttr('aria-hidden');
+    $activeOverlay = null;
+    currentIndex = -1;
+  }
+
+  // Open on thumbnail button click
+  $triggers.on('click', function (e) {
+    e.preventDefault();
+
+    var targetId = $(this).data('overlay');
+    if (!targetId) return;
+
+    var index = overlayIds.indexOf(targetId);
+    if (index === -1) {
+      index = 0;
+    }
+
+    var $overlay = $('#' + targetId);
+    if ($overlay.length) {
+      openOverlayFromTrigger($overlay, index);
+    }
+  });
+
+  // Close on close button
+  $('.piece-overlay').on('click', '.overlay-close', function (e) {
+    e.preventDefault();
+    closeOverlay();
+  });
+
+  // Close on backdrop click (only outer overlay)
+  $('.piece-overlay').on('click', function (e) {
+    if (e.target === this) {
+      closeOverlay();
+    }
+  });
+
+  // Visible nav buttons: Previous / Next
+  $('.piece-overlay').on('click', '.overlay-next', function (e) {
+    e.preventDefault();
+
+    if (currentIndex === -1 && $activeOverlay) {
+      var activeId = $activeOverlay.attr('id');
+      var idx = overlayIds.indexOf(activeId);
+      if (idx !== -1) currentIndex = idx;
+    }
+
+    if (currentIndex !== -1) {
+      switchOverlay(currentIndex + 1);
+    }
+  });
+
+  $('.piece-overlay').on('click', '.overlay-prev', function (e) {
+    e.preventDefault();
+
+    if (currentIndex === -1 && $activeOverlay) {
+      var activeId = $activeOverlay.attr('id');
+      var idx = overlayIds.indexOf(activeId);
+      if (idx !== -1) currentIndex = idx;
+    }
+
+    if (currentIndex !== -1) {
+      switchOverlay(currentIndex - 1);
+    }
+  });
+
+  // ESC, arrow keys, and focus trapping
+  $(document).on('keydown', function (e) {
+    if (!$activeOverlay) return;
+
+    var isEscape = e.key === 'Escape' || e.keyCode === 27;
+    var isTab = e.key === 'Tab' || e.keyCode === 9;
+    var isArrowRight = e.key === 'ArrowRight' || e.keyCode === 39;
+    var isArrowLeft = e.key === 'ArrowLeft' || e.keyCode === 37;
+
+    // ESC: close and restore focus to trigger
+    if (isEscape) {
+      e.preventDefault();
+      closeOverlay();
+      return;
+    }
+
+    // Arrow keys: switch projects
+    if (isArrowRight || isArrowLeft) {
+      e.preventDefault();
+
+      if (currentIndex === -1 && $activeOverlay) {
+        var activeId = $activeOverlay.attr('id');
+        var idx = overlayIds.indexOf(activeId);
+        if (idx !== -1) currentIndex = idx;
+      }
+
+      if (currentIndex !== -1) {
+        if (isArrowRight) {
+          switchOverlay(currentIndex + 1);
+        } else if (isArrowLeft) {
+          switchOverlay(currentIndex - 1);
+        }
+      }
+
+      return;
+    }
+
+    // TAB focus trapping inside active overlay
+    if (isTab) {
+      var $focusable = getFocusableElements($activeOverlay);
+      if (!$focusable.length) return;
+
+      var first = $focusable[0];
+      var last = $focusable[$focusable.length - 1];
+
+      if (e.shiftKey) {
+        if (document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        }
+      } else {
+        if (document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    }
+  });
 });

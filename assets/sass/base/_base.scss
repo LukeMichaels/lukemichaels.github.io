@@ -1,50 +1,5 @@
 @use "../utils/variables" as *;
 
-.row {
-  display: flex;
-  flex: 0 1 auto;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1020px;
-  padding-right: 10px; //0.5rem;
-  padding-left: 10px; //0.5rem;
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/*
-.col {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-*/
-
-// basic styles for links
-a {
-  text-decoration: none;
-  cursor: pointer;
-  &:active {
-    border: 2px solid $pink;
-  }
-  &:hover {
-    //color: $blue;
-  }
-}
-
-b, strong {
-  font-weight: 700;
-}
-
-em {
-  font-style: italic;
-}
-
-// ::::::::::::::::::::::::::::::::::::::::
-// global styles
-// ::::::::::::::::::::::::::::::::::::::::
 * { }
 
 html {
@@ -58,8 +13,11 @@ body {
   padding: 0;
   color: $purple;
   background-color: $green;
-  background-image: url("../images/FlannelBackground.jpg");
+  background-image: url("../images/FlannelBackground.webp");
   background-repeat: repeat;
+  font-family: $font-regular;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 .wrapper {
@@ -105,10 +63,28 @@ body {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+  &:active {
+    border: 2px solid $pink;
+  }
+  &:hover {
+    //color: $blue;
+  }
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
 // column setup
 .col {
   display: block;
-  float:left;
   margin: 1% 0 1% 1.6%;
 }
 .col:first-child { margin-left: 0; }
@@ -194,17 +170,13 @@ body {
   }
 }
 
-
-// ::::::::::::::::::::::::::::::::::::::::
-// general page styles
-// ::::::::::::::::::::::::::::::::::::::::
 .page-header {
   width: 100%;
   box-sizing: border-box;
   padding: 0 20px;
 
   h1 {
-    margin: 60px 0 5px;
+    margin: 60px 0 0;
     color: #C94768;
     text-transform: uppercase;
     font-family: $font-bold;
@@ -226,13 +198,15 @@ body {
       color: $pink;
     }
   }
+
 } // .page-header
 
 .page-content {
-  display: block;
+  display: flex;
+  //flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
   width: 100%;
-  float: left;
-  background-color: $green;
 }
 
 .page-footer {
@@ -261,8 +235,6 @@ body {
     }
   }
 } // .page-header
-
-body { font-family: $font-regular; font-size: 1em; line-height: 1.5em; }
 
 h1 {
   margin: 40px 0 5px;
@@ -320,7 +292,6 @@ a:hover, a:focus, a:active { color: $purple; text-decoration: none; cursor: poin
 }
 
 .full {
-  float: left;
   margin: 2%;
   width: 96%;
   text-align: center;
@@ -341,7 +312,6 @@ a:hover, a:focus, a:active { color: $purple; text-decoration: none; cursor: poin
 } //.full
 
 #half {
-  float: left;
   margin: 2%;
   width: 46%;
   min-width: 46%;
@@ -367,3 +337,19 @@ a:hover, a:focus, a:active { color: $purple; text-decoration: none; cursor: poin
   color: $purple;
 }
 
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: $teal;
+  color: $white;
+  padding: 0.5rem 1rem;
+  z-index: 100;
+
+  &:focus {
+    left: 0.5rem;
+    top: 0.5rem;
+    outline: 2px solid $white;
+    outline-offset: 2px;
+  }
+}
