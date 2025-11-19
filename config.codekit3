@@ -883,7 +883,7 @@
     },
     "\/assets\/images\/retina\/mac-wall-psych.jpg" : {
       "ft" : 16384,
-      "iS" : 324691,
+      "iS" : 319478,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/assets\/images\/retina\/mac-wall-psych.jpg",
@@ -1065,7 +1065,7 @@
     },
     "\/assets\/images\/retina\/mr-history-one.jpg" : {
       "ft" : 16384,
-      "iS" : 1032742,
+      "iS" : 1047030,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/assets\/images\/retina\/mr-history-one.jpg",
@@ -1234,7 +1234,7 @@
     },
     "\/assets\/images\/retina\/rhino-deck.jpg" : {
       "ft" : 16384,
-      "iS" : 176742,
+      "iS" : 174343,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/assets\/images\/retina\/rhino-deck.jpg",
@@ -1260,7 +1260,7 @@
     },
     "\/assets\/images\/retina\/rogue-landing-page.jpg" : {
       "ft" : 16384,
-      "iS" : 969658,
+      "iS" : 827190,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/assets\/images\/retina\/rogue-landing-page.jpg",
@@ -1920,102 +1920,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/Luke_Michaels_Resume_2025.pdf",
-      "oF" : 0
-    },
-    "\/old\/blog.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/old\/blog.php",
-      "oF" : 0
-    },
-    "\/old\/branding.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/old\/branding.php",
-      "oF" : 0
-    },
-    "\/old\/CaptchaSecurityImages.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/old\/CaptchaSecurityImages.php",
-      "oF" : 0
-    },
-    "\/old\/Luke_Michaels_Resume_2014_Web.pdf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/old\/Luke_Michaels_Resume_2014_Web.pdf",
-      "oF" : 0
-    },
-    "\/old\/Luke_Michaels_Resume_2014.pdf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/old\/Luke_Michaels_Resume_2014.pdf",
-      "oF" : 0
-    },
-    "\/old\/Luke_Michaels_Resume_2015_Web.pdf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/old\/Luke_Michaels_Resume_2015_Web.pdf",
-      "oF" : 0
-    },
-    "\/old\/Luke_Michaels_Resume_2015.pdf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/old\/Luke_Michaels_Resume_2015.pdf",
-      "oF" : 0
-    },
-    "\/old\/Luke_Michaels_Resume_2016.pdf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/old\/Luke_Michaels_Resume_2016.pdf",
-      "oF" : 0
-    },
-    "\/old\/Luke_Michaels_Resume.pdf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/old\/Luke_Michaels_Resume.pdf",
-      "oF" : 0
-    },
-    "\/old\/misc.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/old\/misc.php",
-      "oF" : 0
-    },
-    "\/old\/print.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/old\/print.php",
-      "oF" : 0
-    },
-    "\/old\/web.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/old\/web.php",
       "oF" : 0
     },
     "\/README.html" : {
