@@ -67,7 +67,7 @@ a {
   text-decoration: none;
   cursor: pointer;
   &:active {
-    border: 2px solid $pink;
+    border: 2px solid $purple;
   }
   &:hover {
     //color: $blue;
@@ -195,7 +195,7 @@ em {
     color: $teal;
     
     &:hover {
-      color: $pink;
+      color: $purple;
     }
   }
 
@@ -214,14 +214,6 @@ em {
   box-sizing: border-box;
   padding: 0 20px;
 
-  h1 {
-    margin: 20px 0 5px;
-    color: white;
-    font-family: $font-bold;
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   p {
     margin-bottom: 64px;
     color: $purple;
@@ -231,7 +223,7 @@ em {
   a {
     color: $teal;
     &:hover {
-      color: $pink;
+      color: $purple;
     }
   }
 } // .page-header
@@ -258,7 +250,7 @@ h3 {
 
 h4 { 
   padding: 0px;
-  color: $pink;
+  color: $purple;
   font-family: $font-regular;
   font-size: 1em;
 }

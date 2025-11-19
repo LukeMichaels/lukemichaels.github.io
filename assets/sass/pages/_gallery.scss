@@ -26,7 +26,7 @@
   }
 
   &:focus-visible {
-    outline: 3px solid $pink;
+    outline: 3px solid $purple;
     outline-offset: 3px;
   }
 }
@@ -93,8 +93,8 @@
 
     &:hover,
     &:focus-visible {
-      color: $pink;
-      outline: 2px solid $pink;
+      color: $purple;
+      outline: 2px solid $purple;
       outline-offset: 2px;
     }
   }
@@ -124,12 +124,26 @@
 
   .overlay-body {
     width: 100%;
-    float: left;
     padding: 0 1rem 3rem;
-  }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    h3 {
+      color: $pink;
+    }
+
+    p {
+      color: $teal;
+    }
+
+  } // .overlay-body
 
   .project-type {
-    color: $pink;
+    color: $purple;
     font-size: 1rem;
     margin-bottom: 0.75rem;
   }

@@ -31,21 +31,21 @@
     margin: 0 0 0 0;
     text-transform: uppercase;
     font-size: 1.2em;
-    color: $purple;
+    color: $black;
   }
 
   .about-heading {
     margin: 0 0 0 0;
     font-size: 1em;
     line-height: 1.2em;
-    color: $pink;
+    color: $black;
   }
 
   .about-detail {
     margin: 0 0 10px 0;
     font-size: 1em;
     line-height: 1.2em;
-    color: $teal;
+    color: $purple;
   }
 
   .about-buttons {
@@ -59,15 +59,15 @@
       box-sizing: border-box;
       padding: 15px 0 10px;
       margin-bottom: 15px;
-      background-color: $teal;
+      background-color: $purple;
       text-transform: uppercase;
       font-size: 1rem;
       line-height: 1.25rem;
       &:hover {
-        background-color: $pink;
+        background-color: $black;
       }
       &:active {
-        border: 2px solid $pink;
+        border: 2px solid $purple;
       }
     }
 
