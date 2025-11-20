@@ -151,18 +151,12 @@ em {
   @include respond-to(b-320) {
     display: block !important;
   }
-  @include respond-to(b-320) {
-    display: block !important;
-  }
 }
 
 .hide-on-mobile {
   display: block;
 
   @include respond-to(b-765) {
-    display: none !important;
-  }
-  @include respond-to(b-320) {
     display: none !important;
   }
   @include respond-to(b-320) {

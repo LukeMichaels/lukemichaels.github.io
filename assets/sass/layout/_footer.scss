@@ -25,12 +25,12 @@
   background-size: cover;
   background-size: contain;
   z-index: 500;
-  /*
+  
     -o-background-size: 100% auto;
     -webkit-background-size: 100% auto;
     -moz-background-size: 100% auto;
     background-size: 100% auto;
-  */
+ 
   @include respond-to(b-2500) {
     height: 550px;
     background-size: 100% auto;

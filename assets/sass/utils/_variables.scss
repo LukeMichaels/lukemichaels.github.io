@@ -25,7 +25,10 @@ $weight-bold: 700;
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 /// @see {mixin} respond-to
 $breakpoints: (
+  'b-1080': (max-width: 1080px),
   'row': (max-width: 1020px),
+  'b-900': (max-width: 900px),
+  'b-890': (max-width: 890px),
   'b-860': (max-width: 860px),
   'b-820': (max-width: 820px),
   'b-800': (max-width: 800px),

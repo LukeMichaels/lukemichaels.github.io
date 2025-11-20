@@ -1,5 +1,5 @@
-/* global jQuery */
 jQuery(function ($) {
+
   /* :::::::::: Show/Hide Top Nav on Scroll :::::::::: */
   $(window).on('scroll', function () {
     if ($(this).scrollTop() > 100 && !$('#stickyheader').hasClass('open')) {
@@ -10,7 +10,6 @@ jQuery(function ($) {
   });
 
   /* :::::::::: Accessible Gallery Modals + Arrow Navigation :::::::::: */
-
   var $mainContent = $('#main');
   if (!$mainContent.length) {
     $mainContent = $('.wrapper');
@@ -230,4 +229,34 @@ jQuery(function ($) {
       }
     }
   });
+
+  /* :::::::::: Parallax Hero Image :::::::::: */
+  var $parallaxImg = $('.parallax-img');
+
+  if ($parallaxImg.length) {
+    // Ensure starting transform is sane
+    $parallaxImg.css('transform', 'translate(-50%, 0)');
+
+    // Update on scroll
+    $(window).on('scroll.parallax', function () {
+      // Disable parallax under 890px (mobile / small tablet)
+      if (window.innerWidth < 890) {
+        $parallaxImg.css('transform', 'translate(-50%, 0)');
+        return;
+      }
+
+      var scrolled = $(this).scrollTop();
+      var offset = scrolled * 0.3; // parallax strength
+
+      $parallaxImg.css('transform', 'translate(-50%, ' + offset + 'px)');
+    });
+
+    // Also listen for resize so switching across the 890px threshold feels clean
+    $(window).on('resize.parallax', function () {
+      if (window.innerWidth < 890) {
+        $parallaxImg.css('transform', 'translate(-50%, 0)');
+      }
+    }).trigger('resize.parallax');
+  }
+
 });

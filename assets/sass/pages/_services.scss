@@ -37,4 +37,15 @@
     width: 100%; 
   }
 
+  .service-icon {
+    box-sizing: border-box;
+    padding: 0 15px 0 5px;
+    text-align: center;
+    color: $purple;
+  }
+
+  .service-link {
+    text-align: left;
+  }
+
 } // .services

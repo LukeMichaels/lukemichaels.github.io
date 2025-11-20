@@ -334,6 +334,17 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/assets\/images\/header.webp" : {
+      "ft" : 8388608,
+      "iS" : 526304,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/header.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/assets\/images\/kog\/Contribute-kog.webp" : {
       "ft" : 8388608,
       "iS" : 336792,

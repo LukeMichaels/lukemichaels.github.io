@@ -135,4 +135,17 @@
 
   } // .two-columns-left
 
+  .about-icon {
+    float: left;
+    width: 25%;
+    text-align: center;
+  }
+  
+  .about-link {
+    float: right;
+    padding-left: 2%;
+    width: 73%;
+    text-align: left;
+  }
+
 } // .about
