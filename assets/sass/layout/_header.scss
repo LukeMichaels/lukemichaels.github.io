@@ -39,15 +39,12 @@ nav {
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  height: 260px;
+  height: 218px;
   overflow: hidden;
   background-image: none;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  @include respond-to('b-1080') {
-    height: 230px;
-  }
   @include respond-to('b-900') {
     height: 210px;
   }
