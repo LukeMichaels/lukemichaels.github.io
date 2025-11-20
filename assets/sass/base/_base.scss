@@ -124,6 +124,9 @@ em {
 .page-header {
   width: 100%;
   padding: 0 20px;
+  @include respond-to('b-700') {
+    padding: 0 0 0 0;
+  }
 }
 
 .page-content {
@@ -151,7 +154,7 @@ em {
     }
   }
 
-} // .page-header
+} // .page-footer
 
 .skip-link {
   position: absolute;
