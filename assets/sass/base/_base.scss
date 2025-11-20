@@ -121,14 +121,6 @@ em {
   font-style: italic;
 }
 
-.page-header {
-  width: 100%;
-  padding: 0 20px;
-  @include respond-to('b-700') {
-    padding: 0 0 0 0;
-  }
-}
-
 .page-content {
   display: flex;
   justify-content: space-between;
