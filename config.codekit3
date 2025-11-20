@@ -1515,19 +1515,6 @@
       "oS" : 3,
       "pg" : 0
     },
-    "\/assets\/sass\/pages\/_contact.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 1,
-      "oA" : 1,
-      "oAP" : "\/assets\/sass\/pages\/_contact.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 0
-    },
     "\/assets\/sass\/pages\/_gallery.scss" : {
       "aP" : 0,
       "bl" : 0,
