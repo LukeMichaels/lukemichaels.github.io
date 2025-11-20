@@ -2,7 +2,14 @@
 
 .about {
   width: 100%;
-  padding: 70px 20px;
+  padding: 40px 20px;
+
+  h1 {
+    margin: 40px 0 5px;
+    @include respond-to('b-670') {
+      margin: 0 auto 5px;
+    }
+  }
 
   .about-columns {
     display: flex;
@@ -83,6 +90,9 @@
         width: 100%;
         max-width: 500px;
         margin: 0 0 40px 0;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
       }
 
       .about-title {
