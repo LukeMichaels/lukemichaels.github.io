@@ -1587,14 +1587,6 @@
       "oAP" : "\/CNAME",
       "oF" : 0
     },
-    "\/contact.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/contact.html",
-      "oF" : 0
-    },
     "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
