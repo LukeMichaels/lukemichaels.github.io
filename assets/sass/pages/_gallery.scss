@@ -2,10 +2,31 @@
 
 .gallery {
 
+  h1 {
+    @include respond-to('b-600') {
+      padding: 0 0 0 0;
+    }
+  }
+
   em {
     box-sizing: border-box;
     width: 100%;
     padding: 0 20px;
+    @include respond-to('b-600') {
+      padding: 0 0 0 0;
+    }
+  }
+
+  .page-content {
+    @include respond-to('b-600') {
+      flex-wrap: wrap;
+    }
+  }
+
+  .col {
+    @include respond-to('b-600') {
+      width: 100%;
+    }
   }
 
 } // .gallery
@@ -78,8 +99,13 @@
       gap: 1rem;
       width: 100%;
       padding: 0 1rem;
+      @include respond-to('b-490') {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
-  }
+
+  } // .overlay-header
 
   .overlay-nav button {
     border: 0;
@@ -129,6 +155,28 @@
       display: flex;
       justify-content: center;
       gap: 20px;
+      @include respond-to('b-700') {
+        flex-wrap: wrap;
+        gap: 0;
+      }
+    }
+
+    .col {
+      @include respond-to('b-700') {
+        width: 100%;
+      }
+    }
+
+    .span_3_of_5 {
+      @include respond-to('b-700') {
+        order: 2;
+      }
+    }
+
+    .span_2_of_5 {
+      @include respond-to('b-700') {
+        order: 1;
+      }
     }
 
     h3 {
