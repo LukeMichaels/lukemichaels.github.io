@@ -19,6 +19,7 @@
     box-sizing: border-box;
     width: 100%;
     padding: 0 20px;
+    color: $pink-1;
     @include respond-to('b-600') {
       padding: 0 0 0 0;
     }

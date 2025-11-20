@@ -42,15 +42,15 @@
           box-sizing: border-box;
           padding: 15px 0 10px;
           margin-bottom: 15px;
-          background-color: $purple;
+          background-color: $purple-2;
           text-transform: uppercase;
           font-size: 1rem;
           line-height: 1.25rem;
           &:hover {
-            background-color: $black;
+            background-color: $pink-1;
           }
           &:active {
-            border: 2px solid $purple;
+            border: 2px solid $blue-2;
           }
         }
 
@@ -89,21 +89,21 @@
         margin: 0 0 0 0;
         text-transform: uppercase;
         font-size: 1.2em;
-        color: $black;
+        color: $purple-2;
       }
 
       .about-heading {
         margin: 0 0 0 0;
         font-size: 1em;
         line-height: 1.2em;
-        color: $black;
+        color: $pink-1;
       }
 
       .about-detail {
         margin: 0 0 10px 0;
         font-size: 1em;
         line-height: 1.2em;
-        color: $purple;
+        color: $blue-2;
       }
 
     } // .about-right
