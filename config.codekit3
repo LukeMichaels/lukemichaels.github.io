@@ -400,6 +400,28 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/assets\/images\/mfa\/Henrietta_Finds_A_Nest_Thumbnail.webp" : {
+      "ft" : 8388608,
+      "iS" : 679700,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/mfa\/Henrietta_Finds_A_Nest_Thumbnail.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/assets\/images\/mfa\/Henrietta_Finds_A_Nest.webp" : {
+      "ft" : 8388608,
+      "iS" : 757216,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/mfa\/Henrietta_Finds_A_Nest.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/assets\/images\/ofri\/OFRI_Homepage.webp" : {
       "ft" : 8388608,
       "iS" : 345800,
