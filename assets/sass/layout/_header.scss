@@ -15,17 +15,49 @@ nav {
   background-color: $teal;
 
   ul {
-    float: right;
-    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    margin: auto 20px auto auto;
   }
 
-  a {
-    box-sizing: border-box;
+  li a {
+    display: block;
+    position: relative;
     padding: 15px 10px 10px 10px;
     color: $white;
-    &:hover {
-      background-color: $pink;
+    border: 2px solid $teal;
+    text-transform: uppercase;
+    font-size: 1rem;
+    @include respond-to(b-375) {
+      font-size: 0.8rem;
     }
+    @include respond-to(b-325) {
+      font-size: 0.75rem;
+    }
+    @include respond-to(b-305) {
+      font-size: 0.6rem;
+    }
+  }
+  
+  li a:visited {
+    color: $white;
+  }
+  
+  li a:hover {
+    color: $black;
+  }
+  
+  li a:hover, li a:focus {
+    background-color: $teal;
+    border: 2px solid $pink;
+  }
+
+  .current-page {
+    text-decoration: underline;
+    color: $black !important;
+    pointer-events: none;
   }
 
 } // nav
@@ -34,7 +66,7 @@ nav {
   top: -45px;
 }
 
-.desktop-header {
+.hero {
   position: relative;
   width: 100%;
   max-width: 1080px;
@@ -56,119 +88,21 @@ nav {
   @include respond-to('b-700') {
     height: 120px;
   }
-}
 
-.parallax-img {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  height: 100%;
-  width: auto;
-  will-change: transform;
-  pointer-events: none;
-  @include respond-to('b-890') {
-    display: none;
+  .parallax-img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    width: auto;
+    will-change: transform;
+    pointer-events: none;
+    @include respond-to('b-890') {
+      display: none;
+    }
   }
-}
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0px;
-  padding-right: 15px;
-}
+} // .hero
 
-.navbar {
-  border: 0px;
-  margin-bottom: 0px;
-  min-height: 25px;
-}
 
-.navbar-inner {
-  background: $teal;
-}
-
-.navbar-inner .container {
-  width: 100%;
-  max-width: 900px;
-}
-
-.nav-collapse {
-  position: relative;
-  float: right;
-  padding-top: 10px;
-  width: 100%;
-  min-height: 35px;
-}
-
-.stat-nav {
-  float: right;
-  margin: 0;
-  padding: 0;
-}
-
-.stat-nav li {
-  padding-right: 15px;
-}
-
-.drop-nav {
-  position: relative;
-  float: right;
-  margin: 0;
-  padding: 0;
-}
-
-.drop-nav li .dropdown {
-  float: left; 
-  width: 25% !important;
-}
-
-.nav li {
-  float: left;
-}
-
-.drop-nav li {
-  float: left;
-  width: 100%;
-}
-
-.nav li a {
-  display: block;
-  position: relative;
-  color: $white;
-  text-transform: uppercase;
-  font-size: 1rem;
-  @include respond-to(b-375) {
-    font-size: 0.8rem;
-  }
-  @include respond-to(b-325) {
-    font-size: 0.75rem;
-  }
-  @include respond-to(b-305) {
-    font-size: 0.6rem;
-  }
-}
-
-.nav li a:visited {
-  color: $white;
-}
-
-.nav li a:hover {
-  color: $black;
-}
-
-.nav li a:hover, .nav li a:focus {
-  background-color: $teal;
-}
-
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-  background-color: $teal;
-  border-color: $teal;
-}
-
-.nav .current-page {
-  text-decoration: underline;
-  color: $black !important;
-  pointer-events: none;
-}
