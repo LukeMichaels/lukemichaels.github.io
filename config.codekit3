@@ -422,6 +422,39 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/assets\/images\/mfa\/Peoples_Fund_About.webp" : {
+      "ft" : 8388608,
+      "iS" : 421438,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/mfa\/Peoples_Fund_About.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/assets\/images\/mfa\/Peoples_Fund_Homepage.webp" : {
+      "ft" : 8388608,
+      "iS" : 478468,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/mfa\/Peoples_Fund_Homepage.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/assets\/images\/mfa\/Peoples_Fund_Thumbnail.webp" : {
+      "ft" : 8388608,
+      "iS" : 251982,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/mfa\/Peoples_Fund_Thumbnail.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/assets\/images\/ofri\/OFRI_Homepage.webp" : {
       "ft" : 8388608,
       "iS" : 345800,

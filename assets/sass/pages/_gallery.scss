@@ -187,16 +187,44 @@
       color: $teal;
     }
 
+    a {
+      color: $pink;
+      text-decoration: underline;
+      &:hover {
+        color: $purple;
+      }
+      &:active, &:focus {
+        border: 2px solid $purple;
+      }
+    }
+
   } // .overlay-body
+
+  .project-type {
+    margin-bottom: 0.25rem;
+
+    a {
+      color: $pink;
+      text-decoration: underline;
+      font-size: 1rem;
+      &:hover {
+        color: $purple;
+      }
+      &:active, &:focus {
+        border: 2px solid $purple;
+      }
+    }
+
+  } // .project-type
 
   .project-type {
     color: $purple;
     font-size: 1rem;
-    margin-bottom: 0.75rem;
   }
 
   p {
     width: 100%;
+    margin-top: 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
   }
