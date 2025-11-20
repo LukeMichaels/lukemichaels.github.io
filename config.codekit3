@@ -1598,6 +1598,14 @@
       "oAP" : "\/CNAME",
       "oF" : 0
     },
+    "\/gallery.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gallery.html",
+      "oF" : 0
+    },
     "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
