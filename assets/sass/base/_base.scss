@@ -38,12 +38,11 @@ body.has-galaxy {
 }
 
 .wrapper {
-  margin: 0 auto;
   width: 100%;
   max-width: 1080px;
   position: relative;
   margin: 0 auto;
-  background-color: #BFDA71;
+  background-color: $green;
 
   img {
     max-width: 100%;

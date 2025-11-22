@@ -72,17 +72,18 @@ nav {
   max-width: 1080px;
   margin: 0 auto;
   height: 218px;
-  overflow: hidden;
-  background-image: none;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  // overflow: hidden;
+  // background-image: none;
+  // background-repeat: no-repeat;
+  // background-position: center top;
+  // background-size: cover;
   @include respond-to('b-900') {
     height: 210px;
   }
   @include respond-to('b-890') {
     background-image: url("/assets/images/header.webp");
-    background-size: cover;     // fill, even if cropped
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
   }
   @include respond-to('b-700') {
@@ -104,5 +105,3 @@ nav {
   }
 
 } // .hero
-
-

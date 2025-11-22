@@ -1137,6 +1137,19 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/assets\/images\/ui\/footer_cropped.jpg" : {
+      "ft" : 16384,
+      "iS" : 751453,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/ui\/footer_cropped.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/images\/ui\/footer-1080-non-retina.webp" : {
       "ft" : 8388608,
       "iS" : 33310,
