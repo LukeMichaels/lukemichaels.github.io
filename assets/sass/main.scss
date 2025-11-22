@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@use "utils/variables" as *;
+
+// 2. Vendors
+@use "vendor/normalize";
+@use "vendor/reset";
+
+// 3. Base stuff
+@use "base/base";
+@use "base/fonts";
+@use "base/helpers";
+
+// 4. Layout-related sections
+@use "layout/header";
+@use "layout/footer";
+
+// 5. Page-specific styles
+@use "pages/about";
+@use "pages/gallery";
+@use "pages/services";

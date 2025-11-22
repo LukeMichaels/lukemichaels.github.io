@@ -1,0 +1,51 @@
+@use "../utils/variables" as *;
+
+.services {
+  box-sizing: border-box;
+  padding: 0 20px;
+
+  .piece-wrapper {
+    float: left;
+    margin: 2% 0;
+    padding: 2%;
+    background-color: $white;
+  }
+
+  .two-columns-main {
+    float: right; 
+    width: 75%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    @include respond-to(b-480) {
+      float: left; 
+      width: 100%;
+    }
+  }
+
+  .two-columns-left {
+    float: left; 
+    padding: 2% 2%; 
+    width: 21%;
+    @include respond-to(b-480) {
+      float: right; 
+      padding: 2% 2%; 
+      width: 100%; 
+    }
+  }
+
+  .two-columns-left img {
+    width: 100%; 
+  }
+
+  .service-icon {
+    box-sizing: border-box;
+    padding: 0 15px 0 5px;
+    text-align: center;
+    color: $purple;
+  }
+
+  .service-link {
+    text-align: left;
+  }
+
+} // .services

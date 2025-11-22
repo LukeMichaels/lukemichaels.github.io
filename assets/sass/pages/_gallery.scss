@@ -1,0 +1,249 @@
+@use "../utils/variables" as *;
+
+.gallery {
+  width: 100%;
+  padding: 40px 20px;
+
+  img{
+    width: 100%;
+  }
+
+  .page-header {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 0 0 0;
+    @include respond-to('b-600') {
+      padding: 0 0 0 0;
+    }
+  }
+
+  em {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 20px;
+    color: $blue-2;
+    @include respond-to('b-600') {
+      padding: 0 0 0 0;
+    }
+  }
+
+  .page-content {
+    @include respond-to('b-600') {
+      flex-wrap: wrap;
+    }
+  }
+
+  .col {
+    @include respond-to('b-600') {
+      width: 100%;
+    }
+  }
+
+} // .gallery
+
+.piece-trigger {
+  border: 0;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: left;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $purple;
+    outline-offset: 3px;
+  }
+}
+
+.piece-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: $white;
+  z-index: 5;
+  display: none; // JS + aria-hidden toggle visibility
+  overflow-y: auto;
+
+  -webkit-animation: fadein 0.2s;
+     -moz-animation: fadein 0.2s;
+      -ms-animation: fadein 0.2s;
+       -o-animation: fadein 0.2s;
+          animation: fadein 0.2s;
+
+  &[aria-hidden="true"] {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .span_3_of_5 img {
+    margin-bottom: 40px;
+  }
+
+  .span_1_of_2 img {
+    margin-bottom: 17px;
+  }
+
+  .overlay-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin: 65px auto 30px;
+
+    .row {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      padding: 0 1rem;
+      @include respond-to('b-490') {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+  } // .overlay-header
+
+  .overlay-nav button {
+    border: 0;
+    background: none;
+    color: $teal;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    line-height: 1;
+    &:hover,
+    &:focus-visible {
+      color: $purple;
+      outline: 2px solid $purple;
+      outline-offset: 2px;
+    }
+  }
+
+  .overlay-prev, .overlay-next {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .overlay-close {
+    padding: 0 0;
+    font-size: 1.5rem;
+  }
+
+  .overlay-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  .escape-message {
+    display: flex;
+    align-items: flex-end;
+    font-size: 0.875rem;
+  }
+
+  .overlay-body {
+    width: 100%;
+    padding: 0 1rem 3rem;
+
+    .row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      @include respond-to('b-700') {
+        flex-wrap: wrap;
+        gap: 0;
+      }
+    }
+
+    .col {
+      @include respond-to('b-700') {
+        width: 100%;
+      }
+    }
+
+    .span_3_of_5 {
+      @include respond-to('b-700') {
+        order: 2;
+      }
+    }
+
+    .span_2_of_5 {
+      @include respond-to('b-700') {
+        order: 1;
+      }
+    }
+
+    h3 {
+      color: $pink;
+    }
+
+    p {
+      color: $teal;
+    }
+
+    a {
+      color: $pink;
+      text-decoration: underline;
+      &:hover {
+        color: $purple;
+      }
+      &:active, &:focus {
+        border: 2px solid $purple;
+      }
+    }
+
+  } // .overlay-body
+
+  .project-type {
+    margin-bottom: 0.25rem;
+
+    a {
+      color: $pink;
+      text-decoration: underline;
+      font-size: 1rem;
+      &:hover {
+        color: $purple;
+      }
+      &:active, &:focus {
+        border: 2px solid $purple;
+      }
+    }
+
+  } // .project-type
+
+  .project-type {
+    color: $purple;
+    font-size: 1rem;
+  }
+
+  p {
+    width: 100%;
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  em {
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+    font-size: 0.875rem;
+  }
+
+} // .piece-overlay

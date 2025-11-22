@@ -1,0 +1,107 @@
+@use "../utils/variables" as *;
+
+#stickyheader {
+  display: none;
+  width: 100%;
+  position: fixed;
+  margin: 0 auto;
+  background-color: $teal;
+  z-index: 10;
+}
+
+nav {
+  max-width: 1080px;
+  margin: 0 auto;
+  background-color: $teal;
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    margin: auto 20px auto auto;
+  }
+
+  li a {
+    display: block;
+    position: relative;
+    padding: 15px 10px 10px 10px;
+    color: $white;
+    border: 2px solid $teal;
+    text-transform: uppercase;
+    font-size: 1rem;
+    @include respond-to(b-375) {
+      font-size: 0.8rem;
+    }
+    @include respond-to(b-325) {
+      font-size: 0.75rem;
+    }
+    @include respond-to(b-305) {
+      font-size: 0.6rem;
+    }
+  }
+  
+  li a:visited {
+    color: $white;
+  }
+  
+  li a:hover {
+    color: $black;
+  }
+  
+  li a:hover, li a:focus {
+    background-color: $teal;
+    border: 2px solid $pink;
+  }
+
+  .current-page {
+    text-decoration: underline;
+    color: $black !important;
+    pointer-events: none;
+  }
+
+} // nav
+
+.nav-up {
+  top: -45px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  height: 218px;
+  // overflow: hidden;
+  // background-image: none;
+  // background-repeat: no-repeat;
+  // background-position: center top;
+  // background-size: cover;
+  @include respond-to('b-900') {
+    height: 210px;
+  }
+  @include respond-to('b-890') {
+    background-image: url("/assets/images/header.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  @include respond-to('b-700') {
+    height: 120px;
+  }
+
+  .parallax-img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    width: auto;
+    will-change: transform;
+    pointer-events: none;
+    @include respond-to('b-890') {
+      display: none;
+    }
+  }
+
+} // .hero
